@@ -1,6 +1,6 @@
 # CAPTCHA Recognition System with CNN and LSTM
 
-# Overview
+Overview
 This project aims to enhance Optical Character Recognition (OCR) in CAPTCHA images by leveraging Convolutional Neural Networks (CNNs) and Bidirectional Long Short-Term Memory (LSTM) layers. The objective is to accurately interpret alphanumeric characters and improve CAPTCHA security against automated script intrusions.
 
 # Abstract
