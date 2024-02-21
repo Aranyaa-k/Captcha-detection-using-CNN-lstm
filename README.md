@@ -8,19 +8,11 @@ This project aims to enhance Optical Character Recognition (OCR) in CAPTCHA imag
 
 The project begins with curated CAPTCHA image datasets, undergoing meticulous preprocessing, including grayscale conversion, pixel normalization, and character extraction. Two neural network architectures are developed - one using CNNs exclusively and the other integrating Bidirectional LSTM layers post-CNN. The system is designed to recognize complex patterns and sequences within CAPTCHA images, contributing to the advancement of OCR systems for CAPTCHAs.
 
-## Getting Started
-
 ### Prerequisites
 
 - Python (>=3.6)
 - Keras
 - TensorFlow
-- Google Drive API (for accessing datasets)
-
-### Installation
-
-1. Clone the repository: `git clone https://github.com/yourusername/captcha-recognition.git`
-2. Install dependencies: `pip install -r requirements.txt`
 
 ## Methodology
 
@@ -37,6 +29,13 @@ The algorithm involves importing necessary libraries, decoding text into indices
   - Consists of three gates for selectively retaining and discarding information.
   - Overcomes the vanishing gradient problem experienced by recurrent neural networks (RNNs).
 
+## Testing:
+
+The CNN+LSTM model was tested on 3 different datasets
+  - Fisheye dataset of 10,000 images
+  - Custom captcha dataset of 10,000 images
+  - Standard captcha dataset of 10,000 images
+
 ## Evaluation
 
 The proposed system attains a minimum accuracy of 97.8% in the employed datasets, substantiating its effectiveness in circumventing numerical-CAPTCHA schemes. The evaluation includes accuracy and loss metrics, providing quantifiable measures to gauge the system's performance.
@@ -48,11 +47,3 @@ The project achieved a remarkable 99.5% accuracy with just ten thousand examples
 ## Conclusion
 
 This project emphasizes the need for more robust CAPTCHA systems, as traditional methods are susceptible to advancements in machine learning and computer vision. Moving forward, the goal is to develop a precise model capable of effectively handling diverse text-based captchas with varying lengths and image sizes.
-
-### Testing:
-The CNN+LSTM model was tested on 3 different datasets
-- Fisheye dataset of 10,000 images
-- Custom captcha dataset of 10,000 images
-- Standard captcha dataset of 10,000 images
-
-
